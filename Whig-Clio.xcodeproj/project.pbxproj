@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DCCAB062191C92680096CB14 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCAB061191C92680096CB14 /* SystemConfiguration.framework */; };
-		DCD1DA43194E263200560977 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD1DA42194E263200560977 /* Firebase.framework */; };
+		DCD1DA45194E26D900560977 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD1DA44194E26D900560977 /* Firebase.framework */; };
 		FD3C848518DA72670063408B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD3C848418DA72670063408B /* Foundation.framework */; };
 		FD3C848718DA72670063408B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD3C848618DA72670063408B /* CoreGraphics.framework */; };
 		FD3C848918DA72670063408B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD3C848818DA72670063408B /* UIKit.framework */; };
@@ -42,7 +42,7 @@
 
 /* Begin PBXFileReference section */
 		DCCAB061191C92680096CB14 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		DCD1DA42194E263200560977 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = ../../../../Downloads/Firebase.framework; sourceTree = "<group>"; };
+		DCD1DA44194E26D900560977 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		FD3C848118DA72670063408B /* Whig-Clio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Whig-Clio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD3C848418DA72670063408B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FD3C848618DA72670063408B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -75,7 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCCAB062191C92680096CB14 /* SystemConfiguration.framework in Frameworks */,
-				DCD1DA43194E263200560977 /* Firebase.framework in Frameworks */,
+				DCD1DA45194E26D900560977 /* Firebase.framework in Frameworks */,
 				FD42DA4A191C5B59004AC912 /* Security.framework in Frameworks */,
 				FD42DA48191C5B4F004AC912 /* CFNetwork.framework in Frameworks */,
 				FD42DA46191C5B40004AC912 /* libc++.dylib in Frameworks */,
@@ -124,7 +124,7 @@
 		FD3C848318DA72670063408B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DCD1DA42194E263200560977 /* Firebase.framework */,
+				DCD1DA44194E26D900560977 /* Firebase.framework */,
 				DCCAB061191C92680096CB14 /* SystemConfiguration.framework */,
 				FD42DA49191C5B59004AC912 /* Security.framework */,
 				FD42DA47191C5B4F004AC912 /* CFNetwork.framework */,
