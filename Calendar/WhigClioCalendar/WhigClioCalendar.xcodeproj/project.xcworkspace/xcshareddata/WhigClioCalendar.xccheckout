@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2D4603CD-8834-4EE0-9507-25EEF3CC8D1C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WhigClioCalendar</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F9B70CEE-D476-4708-A8F5-C0BAD331BAEB</key>
+		<string>https://github.com/ac17/Whig-Clio.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Calendar/WhigClioCalendar/WhigClioCalendar.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F9B70CEE-D476-4708-A8F5-C0BAD331BAEB</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ac17/Whig-Clio.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F9B70CEE-D476-4708-A8F5-C0BAD331BAEB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F9B70CEE-D476-4708-A8F5-C0BAD331BAEB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Whig-Clio</string>
+		</dict>
+	</array>
+</dict>
+</plist>

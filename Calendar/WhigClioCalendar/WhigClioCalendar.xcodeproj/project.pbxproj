@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCD1DA53194E2D6500560977 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD1DA52194E2D6500560977 /* Foundation.framework */; };
+		DCD1DA55194E2D6500560977 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD1DA54194E2D6500560977 /* CoreGraphics.framework */; };
+		DCD1DA57194E2D6500560977 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD1DA56194E2D6500560977 /* UIKit.framework */; };
+		DCD1DA5D194E2D6500560977 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCD1DA5B194E2D6500560977 /* InfoPlist.strings */; };
+		DCD1DA5F194E2D6500560977 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD1DA5E194E2D6500560977 /* main.m */; };
+		DCD1DA63194E2D6500560977 /* WCSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD1DA62194E2D6500560977 /* WCSAppDelegate.m */; };
+		DCD1DA65194E2D6500560977 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD1DA64194E2D6500560977 /* Images.xcassets */; };
+		DCD1DA6C194E2D6500560977 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD1DA6B194E2D6500560977 /* XCTest.framework */; };
+		DCD1DA6D194E2D6500560977 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD1DA52194E2D6500560977 /* Foundation.framework */; };
+		DCD1DA6E194E2D6500560977 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD1DA56194E2D6500560977 /* UIKit.framework */; };
+		DCD1DA76194E2D6500560977 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCD1DA74194E2D6500560977 /* InfoPlist.strings */; };
+		DCD1DA78194E2D6500560977 /* WhigClioCalendarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD1DA77194E2D6500560977 /* WhigClioCalendarTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCD1DA6F194E2D6500560977 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD1DA47194E2D6500560977 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCD1DA4E194E2D6500560977;
+			remoteInfo = WhigClioCalendar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DCD1DA4F194E2D6500560977 /* WhigClioCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhigClioCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD1DA52194E2D6500560977 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DCD1DA54194E2D6500560977 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DCD1DA56194E2D6500560977 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DCD1DA5A194E2D6500560977 /* WhigClioCalendar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WhigClioCalendar-Info.plist"; sourceTree = "<group>"; };
+		DCD1DA5C194E2D6500560977 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DCD1DA5E194E2D6500560977 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DCD1DA60194E2D6500560977 /* WhigClioCalendar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhigClioCalendar-Prefix.pch"; sourceTree = "<group>"; };
+		DCD1DA61194E2D6500560977 /* WCSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCSAppDelegate.h; sourceTree = "<group>"; };
+		DCD1DA62194E2D6500560977 /* WCSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCSAppDelegate.m; sourceTree = "<group>"; };
+		DCD1DA64194E2D6500560977 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DCD1DA6A194E2D6500560977 /* WhigClioCalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhigClioCalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD1DA6B194E2D6500560977 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DCD1DA73194E2D6500560977 /* WhigClioCalendarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WhigClioCalendarTests-Info.plist"; sourceTree = "<group>"; };
+		DCD1DA75194E2D6500560977 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DCD1DA77194E2D6500560977 /* WhigClioCalendarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhigClioCalendarTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCD1DA4C194E2D6500560977 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD1DA55194E2D6500560977 /* CoreGraphics.framework in Frameworks */,
+				DCD1DA57194E2D6500560977 /* UIKit.framework in Frameworks */,
+				DCD1DA53194E2D6500560977 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD1DA67194E2D6500560977 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD1DA6C194E2D6500560977 /* XCTest.framework in Frameworks */,
+				DCD1DA6E194E2D6500560977 /* UIKit.framework in Frameworks */,
+				DCD1DA6D194E2D6500560977 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCD1DA46194E2D6500560977 = {
+			isa = PBXGroup;
+			children = (
+				DCD1DA58194E2D6500560977 /* WhigClioCalendar */,
+				DCD1DA71194E2D6500560977 /* WhigClioCalendarTests */,
+				DCD1DA51194E2D6500560977 /* Frameworks */,
+				DCD1DA50194E2D6500560977 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCD1DA50194E2D6500560977 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCD1DA4F194E2D6500560977 /* WhigClioCalendar.app */,
+				DCD1DA6A194E2D6500560977 /* WhigClioCalendarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCD1DA51194E2D6500560977 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCD1DA52194E2D6500560977 /* Foundation.framework */,
+				DCD1DA54194E2D6500560977 /* CoreGraphics.framework */,
+				DCD1DA56194E2D6500560977 /* UIKit.framework */,
+				DCD1DA6B194E2D6500560977 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCD1DA58194E2D6500560977 /* WhigClioCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				DCD1DA61194E2D6500560977 /* WCSAppDelegate.h */,
+				DCD1DA62194E2D6500560977 /* WCSAppDelegate.m */,
+				DCD1DA64194E2D6500560977 /* Images.xcassets */,
+				DCD1DA59194E2D6500560977 /* Supporting Files */,
+			);
+			path = WhigClioCalendar;
+			sourceTree = "<group>";
+		};
+		DCD1DA59194E2D6500560977 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCD1DA5A194E2D6500560977 /* WhigClioCalendar-Info.plist */,
+				DCD1DA5B194E2D6500560977 /* InfoPlist.strings */,
+				DCD1DA5E194E2D6500560977 /* main.m */,
+				DCD1DA60194E2D6500560977 /* WhigClioCalendar-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCD1DA71194E2D6500560977 /* WhigClioCalendarTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCD1DA77194E2D6500560977 /* WhigClioCalendarTests.m */,
+				DCD1DA72194E2D6500560977 /* Supporting Files */,
+			);
+			path = WhigClioCalendarTests;
+			sourceTree = "<group>";
+		};
+		DCD1DA72194E2D6500560977 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCD1DA73194E2D6500560977 /* WhigClioCalendarTests-Info.plist */,
+				DCD1DA74194E2D6500560977 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCD1DA4E194E2D6500560977 /* WhigClioCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCD1DA7B194E2D6500560977 /* Build configuration list for PBXNativeTarget "WhigClioCalendar" */;
+			buildPhases = (
+				DCD1DA4B194E2D6500560977 /* Sources */,
+				DCD1DA4C194E2D6500560977 /* Frameworks */,
+				DCD1DA4D194E2D6500560977 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WhigClioCalendar;
+			productName = WhigClioCalendar;
+			productReference = DCD1DA4F194E2D6500560977 /* WhigClioCalendar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCD1DA69194E2D6500560977 /* WhigClioCalendarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCD1DA7E194E2D6500560977 /* Build configuration list for PBXNativeTarget "WhigClioCalendarTests" */;
+			buildPhases = (
+				DCD1DA66194E2D6500560977 /* Sources */,
+				DCD1DA67194E2D6500560977 /* Frameworks */,
+				DCD1DA68194E2D6500560977 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCD1DA70194E2D6500560977 /* PBXTargetDependency */,
+			);
+			name = WhigClioCalendarTests;
+			productName = WhigClioCalendarTests;
+			productReference = DCD1DA6A194E2D6500560977 /* WhigClioCalendarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCD1DA47194E2D6500560977 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WCS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Whig-Cliosophic Society";
+				TargetAttributes = {
+					DCD1DA69194E2D6500560977 = {
+						TestTargetID = DCD1DA4E194E2D6500560977;
+					};
+				};
+			};
+			buildConfigurationList = DCD1DA4A194E2D6500560977 /* Build configuration list for PBXProject "WhigClioCalendar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DCD1DA46194E2D6500560977;
+			productRefGroup = DCD1DA50194E2D6500560977 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCD1DA4E194E2D6500560977 /* WhigClioCalendar */,
+				DCD1DA69194E2D6500560977 /* WhigClioCalendarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCD1DA4D194E2D6500560977 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD1DA5D194E2D6500560977 /* InfoPlist.strings in Resources */,
+				DCD1DA65194E2D6500560977 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD1DA68194E2D6500560977 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD1DA76194E2D6500560977 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCD1DA4B194E2D6500560977 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD1DA63194E2D6500560977 /* WCSAppDelegate.m in Sources */,
+				DCD1DA5F194E2D6500560977 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD1DA66194E2D6500560977 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD1DA78194E2D6500560977 /* WhigClioCalendarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCD1DA70194E2D6500560977 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCD1DA4E194E2D6500560977 /* WhigClioCalendar */;
+			targetProxy = DCD1DA6F194E2D6500560977 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DCD1DA5B194E2D6500560977 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCD1DA5C194E2D6500560977 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DCD1DA74194E2D6500560977 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCD1DA75194E2D6500560977 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCD1DA79194E2D6500560977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DCD1DA7A194E2D6500560977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCD1DA7C194E2D6500560977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WhigClioCalendar/WhigClioCalendar-Prefix.pch";
+				INFOPLIST_FILE = "WhigClioCalendar/WhigClioCalendar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DCD1DA7D194E2D6500560977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WhigClioCalendar/WhigClioCalendar-Prefix.pch";
+				INFOPLIST_FILE = "WhigClioCalendar/WhigClioCalendar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DCD1DA7F194E2D6500560977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WhigClioCalendar.app/WhigClioCalendar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WhigClioCalendar/WhigClioCalendar-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WhigClioCalendarTests/WhigClioCalendarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DCD1DA80194E2D6500560977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WhigClioCalendar.app/WhigClioCalendar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WhigClioCalendar/WhigClioCalendar-Prefix.pch";
+				INFOPLIST_FILE = "WhigClioCalendarTests/WhigClioCalendarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCD1DA4A194E2D6500560977 /* Build configuration list for PBXProject "WhigClioCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD1DA79194E2D6500560977 /* Debug */,
+				DCD1DA7A194E2D6500560977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCD1DA7B194E2D6500560977 /* Build configuration list for PBXNativeTarget "WhigClioCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD1DA7C194E2D6500560977 /* Debug */,
+				DCD1DA7D194E2D6500560977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DCD1DA7E194E2D6500560977 /* Build configuration list for PBXNativeTarget "WhigClioCalendarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD1DA7F194E2D6500560977 /* Debug */,
+				DCD1DA80194E2D6500560977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCD1DA47194E2D6500560977 /* Project object */;
+}
