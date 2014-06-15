@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DCCAB060191C91E40096CB14 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCAB05F191C91E40096CB14 /* Firebase.framework */; };
 		DCCAB062191C92680096CB14 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCAB061191C92680096CB14 /* SystemConfiguration.framework */; };
+		DCD1DA43194E263200560977 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD1DA42194E263200560977 /* Firebase.framework */; };
 		FD3C848518DA72670063408B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD3C848418DA72670063408B /* Foundation.framework */; };
 		FD3C848718DA72670063408B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD3C848618DA72670063408B /* CoreGraphics.framework */; };
 		FD3C848918DA72670063408B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD3C848818DA72670063408B /* UIKit.framework */; };
@@ -41,8 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DCCAB05F191C91E40096CB14 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		DCCAB061191C92680096CB14 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DCD1DA42194E263200560977 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = ../../../../Downloads/Firebase.framework; sourceTree = "<group>"; };
 		FD3C848118DA72670063408B /* Whig-Clio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Whig-Clio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD3C848418DA72670063408B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FD3C848618DA72670063408B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -75,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCCAB062191C92680096CB14 /* SystemConfiguration.framework in Frameworks */,
+				DCD1DA43194E263200560977 /* Firebase.framework in Frameworks */,
 				FD42DA4A191C5B59004AC912 /* Security.framework in Frameworks */,
 				FD42DA48191C5B4F004AC912 /* CFNetwork.framework in Frameworks */,
 				FD42DA46191C5B40004AC912 /* libc++.dylib in Frameworks */,
@@ -82,7 +83,6 @@
 				FD3C848718DA72670063408B /* CoreGraphics.framework in Frameworks */,
 				FD3C848918DA72670063408B /* UIKit.framework in Frameworks */,
 				FD3C848518DA72670063408B /* Foundation.framework in Frameworks */,
-				DCCAB060191C91E40096CB14 /* Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,8 +124,8 @@
 		FD3C848318DA72670063408B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DCD1DA42194E263200560977 /* Firebase.framework */,
 				DCCAB061191C92680096CB14 /* SystemConfiguration.framework */,
-				DCCAB05F191C91E40096CB14 /* Firebase.framework */,
 				FD42DA49191C5B59004AC912 /* Security.framework */,
 				FD42DA47191C5B4F004AC912 /* CFNetwork.framework */,
 				FD42DA45191C5B40004AC912 /* libc++.dylib */,
@@ -324,7 +324,7 @@
 		FD3C84AB18DA72680063408B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -363,7 +363,7 @@
 		FD3C84AC18DA72680063408B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -401,6 +401,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					/Users/frankjiang/Downloads,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Whig-Clio/Whig-Clio-Prefix.pch";
@@ -418,6 +419,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					/Users/frankjiang/Downloads,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Whig-Clio/Whig-Clio-Prefix.pch";

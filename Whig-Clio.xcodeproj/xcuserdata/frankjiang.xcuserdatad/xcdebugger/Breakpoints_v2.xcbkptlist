@@ -15,7 +15,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "56"
             endingLineNumber = "56"
-            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkName = "-viewWillAppear:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -38,8 +38,8 @@
                   continueAfterRunningActions = "No"
                   symbolName = "-[ACViewController feed]"
                   moduleName = "Whig-Clio"
-                  urlString = "file:///Users/frankjiang/Google%20Drive/Whig-Clio-App/Whig-Clio/ACViewController.h"
-                  timestampString = "421302909.635982"
+                  urlString = "file:///Users/frankjiang/Documents/Workspace/Whig-Clio/Whig-Clio/ACViewController.h"
+                  timestampString = "424552001.918885"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -52,8 +52,8 @@
                   continueAfterRunningActions = "No"
                   symbolName = "-[ACViewController setFeed:]"
                   moduleName = "Whig-Clio"
-                  urlString = "file:///Users/frankjiang/Google%20Drive/Whig-Clio-App/Whig-Clio/ACViewController.h"
-                  timestampString = "421302909.636281"
+                  urlString = "file:///Users/frankjiang/Documents/Workspace/Whig-Clio/Whig-Clio/ACViewController.h"
+                  timestampString = "424552001.919193"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
