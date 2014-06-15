@@ -19,6 +19,10 @@
 		DCD1DA6E194E2D6500560977 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD1DA56194E2D6500560977 /* UIKit.framework */; };
 		DCD1DA76194E2D6500560977 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCD1DA74194E2D6500560977 /* InfoPlist.strings */; };
 		DCD1DA78194E2D6500560977 /* WhigClioCalendarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD1DA77194E2D6500560977 /* WhigClioCalendarTests.m */; };
+		DCD1DA84194E2DCD00560977 /* whigclioLOGO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DCD1DA83194E2DCD00560977 /* whigclioLOGO.jpg */; };
+		DCD1DA87194E2DE600560977 /* WCSCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD1DA86194E2DE600560977 /* WCSCalendarViewController.m */; };
+		DCD1DA89194E2DF600560977 /* WCSCalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCD1DA88194E2DF600560977 /* WCSCalendarViewController.xib */; };
+		DCD1DA8C194E321700560977 /* WCSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD1DA8B194E321700560977 /* WCSHomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,12 @@
 		DCD1DA73194E2D6500560977 /* WhigClioCalendarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WhigClioCalendarTests-Info.plist"; sourceTree = "<group>"; };
 		DCD1DA75194E2D6500560977 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DCD1DA77194E2D6500560977 /* WhigClioCalendarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhigClioCalendarTests.m; sourceTree = "<group>"; };
+		DCD1DA83194E2DCD00560977 /* whigclioLOGO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whigclioLOGO.jpg; sourceTree = "<group>"; };
+		DCD1DA85194E2DE600560977 /* WCSCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCSCalendarViewController.h; sourceTree = "<group>"; };
+		DCD1DA86194E2DE600560977 /* WCSCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCSCalendarViewController.m; sourceTree = "<group>"; };
+		DCD1DA88194E2DF600560977 /* WCSCalendarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WCSCalendarViewController.xib; sourceTree = "<group>"; };
+		DCD1DA8A194E321700560977 /* WCSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCSHomeViewController.h; sourceTree = "<group>"; };
+		DCD1DA8B194E321700560977 /* WCSHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCSHomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +119,12 @@
 			children = (
 				DCD1DA61194E2D6500560977 /* WCSAppDelegate.h */,
 				DCD1DA62194E2D6500560977 /* WCSAppDelegate.m */,
+				DCD1DA8A194E321700560977 /* WCSHomeViewController.h */,
+				DCD1DA8B194E321700560977 /* WCSHomeViewController.m */,
+				DCD1DA85194E2DE600560977 /* WCSCalendarViewController.h */,
+				DCD1DA86194E2DE600560977 /* WCSCalendarViewController.m */,
+				DCD1DA88194E2DF600560977 /* WCSCalendarViewController.xib */,
+				DCD1DA83194E2DCD00560977 /* whigclioLOGO.jpg */,
 				DCD1DA64194E2D6500560977 /* Images.xcassets */,
 				DCD1DA59194E2D6500560977 /* Supporting Files */,
 			);
@@ -221,7 +237,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCD1DA5D194E2D6500560977 /* InfoPlist.strings in Resources */,
+				DCD1DA89194E2DF600560977 /* WCSCalendarViewController.xib in Resources */,
 				DCD1DA65194E2D6500560977 /* Images.xcassets in Resources */,
+				DCD1DA84194E2DCD00560977 /* whigclioLOGO.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +260,8 @@
 			files = (
 				DCD1DA63194E2D6500560977 /* WCSAppDelegate.m in Sources */,
 				DCD1DA5F194E2D6500560977 /* main.m in Sources */,
+				DCD1DA87194E2DE600560977 /* WCSCalendarViewController.m in Sources */,
+				DCD1DA8C194E321700560977 /* WCSHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

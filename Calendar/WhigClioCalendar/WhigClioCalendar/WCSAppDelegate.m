@@ -7,6 +7,7 @@
 //
 
 #import "WCSAppDelegate.h"
+#import "WCSHomeViewController.h"
 
 @implementation WCSAppDelegate
 
@@ -14,6 +15,22 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    WCSHomeViewController *homeViewController = [[WCSHomeViewController alloc] init];
+    
+    UINavigationController *navController = [[UINavigationController alloc]
+                                             initWithRootViewController:homeViewController];
+    
+    
+    UIImage *logoImage = [UIImage imageNamed:@"whigclioLOGO.jpg"];
+    
+    [[UINavigationBar appearance] setBackgroundImage:logoImage
+                                       forBarMetrics:UIBarMetricsDefault];
+    
+    [navController.navigationBar setBounds:CGRectMake(0, -20, 0, 0)];
+    
+    self.window.rootViewController = navController;
+
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
