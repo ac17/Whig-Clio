@@ -7,6 +7,7 @@
 //
 
 #import "WCSCalendarViewController.h"
+#import <Firebase/Firebase.h>
 
 @interface WCSCalendarViewController () <UITableViewDataSource>
 
@@ -14,6 +15,8 @@
 @property (nonatomic, strong) IBOutlet UILabel *titleLabel;
 
 @property (nonatomic, strong) NSMutableArray *events;
+
+@property (nonatomic, strong) Firebase *firebase;
 
 @end
 
@@ -25,10 +28,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.events = [[NSMutableArray alloc] init];
-        [self.events addObject:@"Breakfast"];
-        [self.events addObject:@"Lunch"];
-        [self.events addObject:@"Dinner"];
+        // Do stuff
     }
     return self;
 }
@@ -39,7 +39,19 @@
 {
     [super viewDidLoad];
 
+    // Adjusting top of table
     self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    // Set up Firebase
+    
+    self.firebase = [[Firebase alloc] initWithUrl:@"https://luminous-fire-6753.firebaseio.com/Events"];
+    [self.firebase observeEventType:FEventTypeValue withBlock:^(FDataSnapshot *snapshot) {
+        self.events = [[NSMutableArray alloc] init];
+        for (FDataSnapshot *child in snapshot.children) {
+            [self.events addObject:child.name];
+        }
+        [self.tableView reloadData];
+    }];
 
 }
 

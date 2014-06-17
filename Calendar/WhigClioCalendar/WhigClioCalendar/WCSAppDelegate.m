@@ -23,11 +23,12 @@
     
     
     UIImage *logoImage = [UIImage imageNamed:@"whigclioLOGO.jpg"];
+    UIImageView *logoImageView = [[UIImageView alloc] initWithImage:logoImage];
+    logoImageView.contentMode = UIViewContentModeScaleAspectFit;
     
-    [[UINavigationBar appearance] setBackgroundImage:logoImage
-                                       forBarMetrics:UIBarMetricsDefault];
+    logoImageView.frame = CGRectMake(0, 20, self.window.bounds.size.width, 64.0);
     
-    [navController.navigationBar setBounds:CGRectMake(0, -20, 0, 0)];
+    [self.window addSubview:logoImageView];
     
     self.window.rootViewController = navController;
 
