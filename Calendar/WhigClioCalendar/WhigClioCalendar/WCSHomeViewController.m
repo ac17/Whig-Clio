@@ -14,6 +14,8 @@
 @property (nonatomic, strong) UIButton *calendarButton;
 @property (nonatomic, strong) WCSCalendarViewController *calendarViewController;
 
+@property (nonatomic, strong) UIImageView *logoImageView;
+
 @end
 
 @implementation WCSHomeViewController
@@ -39,17 +41,38 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    UIImage *logoImage = [UIImage imageNamed:@"whigclioLOGO.jpg"];
+    self.logoImageView = [[UIImageView alloc] initWithImage:logoImage];
+    self.logoImageView.contentMode = UIViewContentModeScaleAspectFit;
+    
+    self.logoImageView.frame = CGRectMake(0, 20, self.view.bounds.size.width, 64.0);
+    
+    [self.view addSubview:self.logoImageView];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [self.navigationController setNavigationBarHidden:YES animated:animated];
+    [UIView animateWithDuration:0.3
+                     animations:^{
+                         self.logoImageView.frame = CGRectMake(0, 20,
+                                                                self.view.bounds.size.width, 64.0);
+                     }];
+    
+    [self setNeedsStatusBarAppearanceUpdate];
+    
     [super viewWillAppear:animated];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [self.navigationController setNavigationBarHidden:NO animated:animated];
+    [UIView animateWithDuration:0.3
+                      animations:^{
+                          self.logoImageView.frame = CGRectMake(-self.view.bounds.size.width, 20,
+                                                                self.view.bounds.size.width, 64.0);
+                      }];
     [super viewWillDisappear:animated];
 }
 

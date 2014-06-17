@@ -21,14 +21,9 @@
     UINavigationController *navController = [[UINavigationController alloc]
                                              initWithRootViewController:homeViewController];
     
-    
-    UIImage *logoImage = [UIImage imageNamed:@"whigclioLOGO.jpg"];
-    UIImageView *logoImageView = [[UIImageView alloc] initWithImage:logoImage];
-    logoImageView.contentMode = UIViewContentModeScaleAspectFit;
-    
-    logoImageView.frame = CGRectMake(0, 20, self.window.bounds.size.width, 64.0);
-    
-    [self.window addSubview:logoImageView];
+    // Set up the dark colour scheme for the nav bar
+    navController.navigationBar.tintColor = [UIColor whiteColor];
+    navController.navigationBar.barTintColor = [UIColor blackColor];
     
     self.window.rootViewController = navController;
 

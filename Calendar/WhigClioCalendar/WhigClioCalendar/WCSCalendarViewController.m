@@ -52,8 +52,12 @@
         }
         [self.tableView reloadData];
     }];
-
+    
+    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+    [self setNeedsStatusBarAppearanceUpdate];
+    
 }
+
 
 - (void)didReceiveMemoryWarning
 {
