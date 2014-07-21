@@ -8,13 +8,21 @@
 
 #import "WCSHomeViewController.h"
 #import "WCSCalendarViewController.h"
+#import "GradientButton.h"
 
 @interface WCSHomeViewController ()
 
-@property (nonatomic, strong) UIButton *calendarButton;
+@property (nonatomic, weak) IBOutlet GradientButton *calendarButton;
+@property (nonatomic, weak) IBOutlet GradientButton *eventsButton;
+@property (nonatomic, weak) IBOutlet GradientButton *galleryButton;
+@property (nonatomic, weak) IBOutlet GradientButton *voteButton;
+@property (nonatomic, weak) IBOutlet GradientButton *contactButton;
+@property (nonatomic, weak) IBOutlet UIButton *facebookButton;
+@property (nonatomic, weak) IBOutlet UIButton *twitterButton;
+
 @property (nonatomic, strong) WCSCalendarViewController *calendarViewController;
 
-@property (nonatomic, strong) UIImageView *logoImageView;
+@property (nonatomic, strong) IBOutlet UIImageView *logoImageView;
 
 @end
 
@@ -24,14 +32,9 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.calendarButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        [self.calendarButton addTarget:self
-                                action:@selector(openCalendar:)
-                      forControlEvents:UIControlEventTouchUpInside];
-        [self.calendarButton setTitle:@"Calendar" forState:UIControlStateNormal];
-        self.calendarButton.frame = CGRectMake(80.0, 210.0, 160.0, 40.0);
-        [self.view addSubview:self.calendarButton];
+    
     }
+
     return self;
 }
 
@@ -40,27 +43,27 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-    UIImage *logoImage = [UIImage imageNamed:@"whigclioLOGO.jpg"];
-    self.logoImageView = [[UIImageView alloc] initWithImage:logoImage];
-    self.logoImageView.contentMode = UIViewContentModeScaleAspectFit;
-    
-    self.logoImageView.frame = CGRectMake(0, 20, self.view.bounds.size.width, 64.0);
-    
-    [self.view addSubview:self.logoImageView];
+
+    [self.calendarButton useCustomWhiteStyle];
+    [self.eventsButton useCustomWhiteStyle];
+    [self.galleryButton useCustomWhiteStyle];
+    [self.voteButton useCustomWhiteStyle];
+    [self.contactButton useCustomWhiteStyle];
+
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [self.navigationController setNavigationBarHidden:YES animated:animated];
-    [UIView animateWithDuration:0.3
-                     animations:^{
-                         self.logoImageView.frame = CGRectMake(0, 20,
-                                                                self.view.bounds.size.width, 64.0);
-                     }];
+    // Figure out how to get the carrier stuff and everything withe navigation bar hidden
     
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     [self setNeedsStatusBarAppearanceUpdate];
+
+    self.facebookButton.layer.cornerRadius = 5.0f;
+    self.facebookButton.layer.masksToBounds = YES;
+    self.twitterButton.layer.cornerRadius = 5.0f;
+    self.twitterButton.layer.masksToBounds = YES;
     
     [super viewWillAppear:animated];
 }
@@ -68,11 +71,6 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     [self.navigationController setNavigationBarHidden:NO animated:animated];
-    [UIView animateWithDuration:0.3
-                      animations:^{
-                          self.logoImageView.frame = CGRectMake(-self.view.bounds.size.width, 20,
-                                                                self.view.bounds.size.width, 64.0);
-                      }];
     [super viewWillDisappear:animated];
 }
 
@@ -95,7 +93,7 @@
 
 #pragma mark - Button method
 
-- (void)openCalendar:(id)sender
+- (IBAction)openCalendar:(id)sender
 {
     if (!self.calendarViewController) {
         self.calendarViewController = [[WCSCalendarViewController alloc] init];

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WCSHomeViewController">
+            <connections>
+                <outlet property="calendarButton" destination="ABP-6Q-5ga" id="2LM-ef-DLC"/>
+                <outlet property="contactButton" destination="sBo-5n-jRr" id="v2U-Zr-HAY"/>
+                <outlet property="eventsButton" destination="UKP-UX-Svq" id="qgy-oB-I4V"/>
+                <outlet property="facebookButton" destination="SQ1-MY-tDA" id="ShB-s4-CeB"/>
+                <outlet property="galleryButton" destination="1mB-T4-MEi" id="zuH-N5-RWo"/>
+                <outlet property="logoImageView" destination="lyG-jN-ns1" id="DWa-jQ-IW8"/>
+                <outlet property="twitterButton" destination="H6k-xr-DDb" id="4ss-4O-kbf"/>
+                <outlet property="view" destination="ADe-qV-Yzz" id="J7N-mT-VXG"/>
+                <outlet property="voteButton" destination="IND-90-13y" id="qMf-SU-InV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ADe-qV-Yzz">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABP-6Q-5ga" customClass="GradientButton">
+                    <rect key="frame" x="49" y="155" width="223" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="223" id="Zji-je-XNE"/>
+                        <constraint firstAttribute="height" constant="35" id="zpk-mr-ZTG"/>
+                    </constraints>
+                    <state key="normal" title="Calendar">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="openCalendar:" destination="-1" eventType="touchUpInside" id="sjF-gN-CGw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mB-T4-MEi" customClass="GradientButton">
+                    <rect key="frame" x="49" y="285" width="223" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="223" id="dMT-Pj-dhg"/>
+                        <constraint firstAttribute="height" constant="35" id="wbj-NC-4HV"/>
+                    </constraints>
+                    <state key="normal" title="Gallery">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKP-UX-Svq" customClass="GradientButton">
+                    <rect key="frame" x="49" y="220" width="223" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="19v-2G-dg9"/>
+                        <constraint firstAttribute="width" constant="223" id="jMF-pT-Fin"/>
+                    </constraints>
+                    <state key="normal" title="Upcoming Events">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBo-5n-jRr" customClass="GradientButton">
+                    <rect key="frame" x="49" y="415" width="223" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="EiF-AU-PYc"/>
+                        <constraint firstAttribute="width" constant="223" id="xh2-nZ-UbC"/>
+                    </constraints>
+                    <state key="normal" title="Contact us">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IND-90-13y" customClass="GradientButton">
+                    <rect key="frame" x="49" y="350" width="223" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="o8b-Uf-dd0"/>
+                        <constraint firstAttribute="width" constant="223" id="wYT-HY-vOW"/>
+                    </constraints>
+                    <state key="normal" title="Vote">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wcLOGOinverted.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lyG-jN-ns1">
+                    <rect key="frame" x="0.0" y="50" width="320" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="4cF-7r-8Xk"/>
+                        <constraint firstAttribute="width" constant="320" id="aCw-rq-dl6"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQ1-MY-tDA">
+                    <rect key="frame" x="95" y="480" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="LWI-0U-v5F"/>
+                        <constraint firstAttribute="width" constant="40" id="lzo-ir-ToG"/>
+                    </constraints>
+                    <state key="normal" title="FB" image="FBIcon.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6k-xr-DDb">
+                    <rect key="frame" x="185" y="480" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="AV4-46-oSV"/>
+                        <constraint firstAttribute="width" constant="40" id="YJh-ZK-8uy"/>
+                    </constraints>
+                    <state key="normal" title="Twitter" image="TwitterIcon.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="SQ1-MY-tDA" firstAttribute="top" secondItem="sBo-5n-jRr" secondAttribute="bottom" constant="30" id="81Z-CZ-0Et"/>
+                <constraint firstItem="H6k-xr-DDb" firstAttribute="top" secondItem="SQ1-MY-tDA" secondAttribute="top" id="Gff-Wv-siN"/>
+                <constraint firstItem="sBo-5n-jRr" firstAttribute="top" secondItem="IND-90-13y" secondAttribute="bottom" constant="30" id="H3K-3D-QJ8"/>
+                <constraint firstItem="ABP-6Q-5ga" firstAttribute="top" secondItem="lyG-jN-ns1" secondAttribute="bottom" constant="41" id="L5h-LT-g80"/>
+                <constraint firstAttribute="centerX" secondItem="ABP-6Q-5ga" secondAttribute="centerX" constant="-0.5" id="MXb-HC-0FE"/>
+                <constraint firstAttribute="centerX" secondItem="sBo-5n-jRr" secondAttribute="centerX" constant="-0.5" id="OIO-oE-6hn"/>
+                <constraint firstItem="lyG-jN-ns1" firstAttribute="top" secondItem="ADe-qV-Yzz" secondAttribute="top" constant="50" id="US6-BW-ur4"/>
+                <constraint firstAttribute="centerX" secondItem="1mB-T4-MEi" secondAttribute="centerX" constant="-0.5" id="UfL-K3-nfu"/>
+                <constraint firstAttribute="centerX" secondItem="lyG-jN-ns1" secondAttribute="centerX" id="WbZ-qe-3lI"/>
+                <constraint firstItem="UKP-UX-Svq" firstAttribute="top" secondItem="ABP-6Q-5ga" secondAttribute="bottom" constant="30" id="X3v-17-txb"/>
+                <constraint firstItem="1mB-T4-MEi" firstAttribute="top" secondItem="UKP-UX-Svq" secondAttribute="bottom" constant="30" id="YeX-sG-Apg"/>
+                <constraint firstAttribute="centerX" secondItem="IND-90-13y" secondAttribute="centerX" constant="-0.5" id="eje-f0-l04"/>
+                <constraint firstItem="SQ1-MY-tDA" firstAttribute="leading" secondItem="ADe-qV-Yzz" secondAttribute="leading" constant="95" id="ft5-1t-r9K"/>
+                <constraint firstItem="IND-90-13y" firstAttribute="top" secondItem="1mB-T4-MEi" secondAttribute="bottom" constant="30" id="jlv-DI-RE2"/>
+                <constraint firstAttribute="centerX" secondItem="UKP-UX-Svq" secondAttribute="centerX" constant="-0.5" id="mcE-fC-aVe"/>
+                <constraint firstAttribute="trailing" secondItem="H6k-xr-DDb" secondAttribute="trailing" constant="95" id="rm5-4M-UIR"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="FBIcon.png" width="960" height="960"/>
+        <image name="TwitterIcon.png" width="416" height="416"/>
+        <image name="wcLOGOinverted.jpg" width="320" height="64"/>
+    </resources>
+</document>
